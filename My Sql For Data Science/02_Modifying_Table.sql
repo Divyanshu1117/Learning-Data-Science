@@ -1,0 +1,10 @@
+USE divyanshu;
+RENAME TABLE Student to Student_Table; 
+SHOW TABLES;
+DROP table Student_Table;
+DESCRIBE students;
+ALTER TABLE students RENAME COLUMN admission_date TO adm_dt;
+ALTER TABLE students DROP COLUMN adm_dt;
+ALTER TABLE students ADD COLUMN is_passed BOOL default True;
+ALTER TABLE students MODIFY COLUMN name varchar(50) default ("");
+ALTER TABLE students MODIFY COLUMN name varchar(50) AFTER is_passed;
