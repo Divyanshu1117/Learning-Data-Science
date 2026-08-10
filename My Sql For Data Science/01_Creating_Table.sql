@@ -1,3 +1,4 @@
+CREATE DATABASE divyanshu;
 SHOW DATABASES;
 USE divyanshu;
 CREATE TABLE students (

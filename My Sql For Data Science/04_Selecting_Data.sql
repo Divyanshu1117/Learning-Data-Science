@@ -1,0 +1,22 @@
+CREATE DATABASE schooldb;
+USE schooldb;
+SELECT * FROM student;
+SELECT * FROM student WHERE grade = "10th";
+SELECT name, age, date_of_birth FROM student WHERE grade = "10th";
+SELECT date_of_birth, name FROM student WHERE grade = "10th";
+SELECT * FROM student WHERE age > 15 and grade = "10th";
+SELECT * FROM student WHERE age BETWEEN 16 AND 18;
+SELECT * FROM student WHERE age BETWEEN 16 AND 18;
+SELECT * FROM student WHERE name LIKE '%an';
+SELECT * FROM student WHERE name LIKE '%hu';
+SELECT * FROM student WHERE name NOT LIKE '%an';
+SELECT * FROM student WHERE date_of_birth is NULL;
+SELECT * FROM student WHERE date_of_birth is NOT NULL;
+SELECT * FROM student WHERE date_of_birth is NOT NULL AND age > 15 AND grade = "10th";
+SELECT * FROM student 
+WHERE (grade = '10th' OR grade = '11th') AND age >= 16;
+SELECT * FROM student WHERE date_of_birth is NOT NULL ORDER BY age DESC;
+SELECT * FROM student WHERE date_of_birth is NOT NULL ORDER BY age ASC;
+SELECT * FROM student WHERE date_of_birth is NOT NULL ORDER BY age ASC LIMIT 1;
+SELECT * FROM student WHERE date_of_birth is NULL ORDER BY age ASC LIMIT 1, 10;
+SELECT * FROM student WHERE date_of_birth is NULL ORDER BY age ASC LIMIT 2, 5;

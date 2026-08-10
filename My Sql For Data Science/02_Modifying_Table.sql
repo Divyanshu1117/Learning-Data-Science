@@ -1,3 +1,4 @@
+CREATE DATABASE divyanshu;
 USE divyanshu;
 RENAME TABLE Student to Student_Table; 
 SHOW TABLES;
