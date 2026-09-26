@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Scraping Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .description {
+            color: #666;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #fafafa;
+        }
+
+        .product-name {
+            color: #2c3e50;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .category {
+            color: #777;
+        }
+
+        img {
+            width: 150px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="heading">Web Scraping Practice</h1>
+
+        <p class="description">
+            This page is created for practicing web scraping using Python.
+        </p>
+
+        <!-- Product 1 -->
+        <div class="product">
+
+            <h2 class="product-name">Laptop</h2>
+
+            <p class="category">
+                Category: Electronics
+            </p>
+
+            <p class="price">
+                Price: ₹55,000
+            </p>
+
+            <img src="https://via.placeholder.com/150" alt="Laptop Image">
+
+            <p class="rating">
+                Rating: 4.5
+            </p>
+
+            <a class="product-link" href="https://example.com/laptop" target="_blank">
+                View Product
+            </a>
+
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="product">
+
+            <h2 class="product-name">Smartphone</h2>
+
+            <p class="category">
+                Category: Electronics
+            </p>
+
+            <p class="price">
+                Price: ₹25,000
+            </p>
+
+            <img src="https://via.placeholder.com/150" alt="Smartphone Image">
+
+            <p class="rating">
+                Rating: 4.3
+            </p>
+
+            <a class="product-link" href="https://example.com/smartphone" target="_blank">
+                View Product
+            </a>
+
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="product">
+
+            <h2 class="product-name">Headphones</h2>
+
+            <p class="category">
+                Category: Accessories
+            </p>
+
+            <p class="price">
+                Price: ₹3,000
+            </p>
+
+            <img src="https://via.placeholder.com/150" alt="Headphones Image">
+
+            <p class="rating">
+                Rating: 4.7
+            </p>
+
+            <a class="product-link" href="https://example.com/headphones" target="_blank">
+                View Product
+            </a>
+
+        </div>
+
+
+        <!-- Table -->
+        <h2>Product Information</h2>
+
+        <table id="product-table">
+
+            <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Rating</th>
+            </tr>
+
+            <tr>
+                <td>Laptop</td>
+                <td>Electronics</td>
+                <td>₹55,000</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td>Smartphone</td>
+                <td>Electronics</td>
+                <td>₹25,000</td>
+                <td>4.3</td>
+            </tr>
+
+            <tr>
+                <td>Headphones</td>
+                <td>Accessories</td>
+                <td>₹3,000</td>
+                <td>4.7</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
