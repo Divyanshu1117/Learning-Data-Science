@@ -19,8 +19,6 @@ This repository contains my learning notes, Jupyter notebooks, practice exercise
 - Flask for Data Scientists
 - Large Language Models (LLMs)
 - Retrieval-Augmented Generation (RAG)
-- Git & GitHub
-- Google Colab
 - Real-world Data Science Projects
 
 ## Projects
