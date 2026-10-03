@@ -565,3 +565,7 @@ secrets.yml
 .mypy_cache/
 .ruff_cache/
 EOF
+
+# Trained Machine Learning Models
+*.pkl
+*.joblib
