@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://code.visualstudio.com/assets/images/linux-logo.png" alt="Linux logo">
+            </div>
+            <div class="logotext">Linux</div>
+            <a href="/">Home</a>
+            <a href="/model">Model</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Prediction Result</h1>
+            <p>
+                This page is used to get predictions
+                from a machine learning model.
+            </p>
+        </section>
+        <section>
+            <h2>Make a Prediction</h2>
+            <form action="/predict" method="post">
+                <label for="feature">Enter Feature Value:</label>
+                <input type="text" id="feature" name="feature" placeholder="Enter value" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter age">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="A">Category A</option>
+                    <option value="B">Category B</option>
+                    <option value="C">Category C</option>
+                </select>
+                <br><br>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="normalize" value="yes">
+                    <span>Apply Normalization</span>
+                </label>
+                <br><br>
+                <button type="submit">Predict</button>
+            </form>
+        </section>
+        <section>
+            <h2>Model Result</h2>
+            <p>Predicted Class:<strong>Positive</strong></p>
+            <p>Probability:<strong>92%</strong></p>
+        </section>
+        <section>
+            <h2>Input Features</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Age</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>Salary</td>
+                        <td>50000</td>
+                    </tr>
+                    <tr>
+                        <td>Experience</td>
+                        <td>3 Years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Features Used by Model</h2>
+            <ul>
+                <li>Age</li>
+                <li>Salary</li>
+                <li>Experience</li>
+            </ul>
+            <h3>Prediction Steps</h3>
+            <ol>
+                <li>Collect input</li>
+                <li>Preprocess data</li>
+                <li>Send data to model</li>
+                <li>Generate prediction</li>
+
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ML Prediction System</p>
+    </footer>
+</body>
+
+</html>

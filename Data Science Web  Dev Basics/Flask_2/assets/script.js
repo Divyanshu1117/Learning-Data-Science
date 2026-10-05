@@ -1,0 +1,1 @@
+alert("Hello, I am Java Script from the script.js file");
