@@ -569,3 +569,25 @@ EOF
 # Trained Machine Learning Models
 *.pkl
 *.joblib
+
+# Audio & Video folders (chahe root pe ho ya kisi subfolder mein)
+**/audios/
+**/videos/
+**/audio/
+**/video/
+
+# Audio formats
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+
+# Video formats
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.flv
+*.webm
