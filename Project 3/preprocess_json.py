@@ -1,13 +1,12 @@
 import os
 import json
+import joblib
 import requests
 import pandas as pd
 
 def create_embedding(text_list):
     r = requests.post(
-        "http://localhost:11434/api/embed",
-        json={"model": "bge-m3", "input": text_list},
-    )
+        "http://localhost:11434/api/embed", json={"model": "bge-m3", "input": text_list})
 
     embedding = r.json()["embeddings"]
     return embedding
@@ -27,11 +26,7 @@ for json_file in jsons:
         chunk["embedding"] = embeddings[i]
         chunk_id += 1
         my_dicts.append(chunk)
-        # print(chunk)
-    # break
 
-# print(my_dicts)
 df = pd.DataFrame.from_records(my_dicts)
-print(df)
-# a = create_embedding(["Cat sat on the mat", "My name is Divyanshu"])
-# print(a)
+# Save this dataframe.
+joblib.dump(df, "embeddings.joblib")

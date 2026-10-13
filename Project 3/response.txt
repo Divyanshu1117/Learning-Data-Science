@@ -1,0 +1,7 @@
+You're wondering where we concluded HTML in the course.
+
+We concluded HTML in the 13th video, and that's where the final parts of HTML were covered. However, it's worth noting that the content about HTML was a bit spread out across different videos. 
+
+The first part of HTML was concluded in the 13th video itself, where we discussed entities, code tags, and more on HTML. The second part of HTML was concluded in the 14th video, where we started exploring CSS after completing the whole HTML.
+
+You can go back to video 13 to watch the conclusion of HTML and see how the topics were covered.

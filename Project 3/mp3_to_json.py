@@ -8,17 +8,15 @@ audios = os.listdir("audios")
 
 for audio in audios:
     if "_" in audio:
-
         number = audio.split("_")[0]
         title = audio.split("_")[1][:-4]
         print(number, title)
         result = model.transcribe(
-            audio=f"audios/{audio}.mp3",
+            audio=f"audios/{audio}",
             # audio=f"audios/sample.mp3",
             language="hi",
             task="translate",
-            word_timestamps=False,
-        )
+            word_timestamps=False)
 
         chunks = []
         for segment in result["segments"]:
