@@ -453,7 +453,7 @@ marimo/_lsp/
 
 # *.pickle
 
-# *.joblib
+*.joblib
 
 # *.h5
 
